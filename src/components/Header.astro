@@ -30,7 +30,7 @@ import Link from "../components/Link.astro";
     >
       <ul class="flex flex-row gap-10">
         <li>
-          <Link size="text-mg" variant="textlink" href="/"
+          <Link size="text-mg" variant="textlink" href="#hvad-er-plastikforurening"
             >Hvad Er Plastikforurening</Link
           >
         </li>
@@ -93,4 +93,18 @@ import Link from "../components/Link.astro";
 
 
 
+<script>
+  // Smooth scrolling script
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+          e.preventDefault();
 
+          const target = document.querySelector(this.getAttribute('href'));
+
+          target.scrollIntoView({
+              behavior: 'smooth', // Smooth scrolling
+              block: 'start' // Scrolls to the top of the section
+          });
+      });
+  });
+</script>
