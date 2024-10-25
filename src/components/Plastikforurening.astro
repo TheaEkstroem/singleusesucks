@@ -1,0 +1,55 @@
+---
+import { Image } from "astro:assets";
+import fisk1 from "../assets/images/fisk1.webp";
+import fisk2 from "../assets/images/fisk2.webp";
+import grønflaske from "../assets/images/grønflaske.webp";
+import plastikpose from "../assets/images/plastikpose.webp";
+import skildpade from "../assets/images/skildpade.webp";
+
+---
+<section class="parallaxgrafik fullwidthsection">
+    <div
+      class="mt-8 h-screen w-full bg-cover bg-center grid grid-cols-12 grid-flow-col overflow-hidden"
+      style="background-image: url('/havet.jpg');"
+    >
+    <Image src={grønflaske} alt="" class="col-start-8 col-span-2 parallaxgrafik1" />
+      <Image src={plastikpose} alt="" class="col-start-4 col-span-2 parallaxgrafik2" />
+      <Image src={fisk2} alt="" class="col-start-8 col-span-1 parallaxgrafik3" />
+      <Image src={fisk1} alt="" class="col-start-2 col-span-2 parallaxgrafik4" />
+      <Image src={grønflaske} alt="" class="col-start-2 col-span-1 parallaxgrafik5" />
+      <Image src={plastikpose} alt="" class="col-start-9 col-span-2 parallaxgrafik6" />
+      <Image src={skildpade} alt="" class="col-start-11 col-span-2 parallaxgrafik7" />
+    </div>
+  </section>
+
+<script>
+    	import { scroll,animate } from "@motionone/dom";
+
+        /* 1 */
+    scroll(animate(".parallaxgrafik1", {  x: [-1500, 2000], y: [100, 0] }), {
+		target: document.querySelector(".parallaxgrafik"), offset: ["start end", "end start"]
+	});
+	scroll(animate(".parallaxgrafik2", {  x: [-1500, 2000], y: [200, 0] }), {
+		target: document.querySelector(".parallaxgrafik"), offset: ["start end", "end start"]
+	});
+	scroll(animate(".parallaxgrafik3", { x: [-1500, 2000], y: [150, 0] }), {
+		target: document.querySelector(".parallaxgrafik"), offset: ["start end", "end start"]
+	});
+
+/* 2 */
+
+scroll(animate(".parallaxgrafik4", {  x: [2000, -1700], y: [100, 0] }), {
+		target: document.querySelector(".parallaxgrafik"), offset: ["start end", "end start"]
+	});
+	scroll(animate(".parallaxgrafik5", {  x: [1900, -1800], y: [100, 0] }), {
+		target: document.querySelector(".parallaxgrafik"), offset: ["start end", "end start"]
+	});
+	scroll(animate(".parallaxgrafik6", { x: [1600, -1800], y: [150, 0] }), {
+		target: document.querySelector(".parallaxgrafik"), offset: ["start end", "end start"]
+	});
+    scroll(animate(".parallaxgrafik7", { x: [1000, -2000], y: [150, 0] }), {
+		target: document.querySelector(".parallaxgrafik"), offset: ["start end", "end start"]
+	});
+
+
+</script>

@@ -10,18 +10,20 @@ import Plastikforurening from "../components/Plastikforurening.astro";
 <MainLayout title="Singleusesucks">
   <article>
     <!-- Hero -->
-<section class="">
-  <h1 text-lg>Det er sejt at bruge plastik flere gange</h1>
-  <h2>#SingleUseSucks</h2>
-  <Link variant="primary" size="large">Støt</Link>
-</section>
+    <section class="relative flex flex-col items-center justify-center h-screen w-full">
+      <h1 text-lg>Det er sejt at bruge plastik flere gange</h1>
+      <h2>#SingleUseSucks</h2>
+      <Link variant="primary" size="large">Støt</Link>
+    </section>
 
 
-<!-- Hvad er plastikforurening -->
-<section>
-<Plastikforurening></Plastikforurening>
-</section>
- 
+
+
+
+    <!-- Hvad er plastikforurening -->
+    <section>
+      <Plastikforurening />
+    </section>
 
     <Image src={thumbsup} alt="" />
   </article>
