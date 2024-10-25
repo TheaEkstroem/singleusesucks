@@ -5,6 +5,8 @@ import Link from "../components/Link.astro";
 import { Image } from "astro:assets";
 import thumbsup from "../assets/images/thumbsup.png";
 import Plastikforurening from "../components/Plastikforurening.astro";
+import Datavisualisering from "../components/Datavisualisering.astro";
+
 ---
 
 <MainLayout title="Singleusesucks">
@@ -20,6 +22,13 @@ import Plastikforurening from "../components/Plastikforurening.astro";
     <section id="hvad-er-plastikforurening">
       <Plastikforurening />
     </section>
+
+
+    <!-- Datavisualisering  -->
+     <section>
+      <Datavisualisering></Datavisualisering>
+     </section>
+
 
     <Image src={thumbsup} alt="" />
   </article>

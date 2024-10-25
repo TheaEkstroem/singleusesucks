@@ -1,0 +1,40 @@
+---
+import { Image } from "astro:assets";
+import Jorden from "../assets/images/Jorden.png";
+import Højretop from "../assets/images/højretop.png";
+import Venstretop from "../assets/images/venstretop.png";
+import Højrebund from "../assets/images/højrebund.png";
+import venstrebund from "../assets/images/venstrebund.png";
+
+---
+<!-- alle billeder skal laves om til webp -->
+
+<section class="flex items-center justify-center min-h-screen relative">
+    <!-- Background Image -->
+    <div class="absolute  z-0">
+        <Image src={Jorden} alt="Jorden" class="object-cover " />
+    </div>
+
+    <!-- Foreground Images in a Grid -->
+    <div class="relative z-10 grid grid-cols-2 gap-9 p-6">
+        <Image src={Venstretop} alt="Venstretop" class="flex justify-center" />
+        <Image src={Højretop} alt="Højretop" class="flex justify-center" />
+        <Image src={venstrebund} alt="Venstrebund" class="flex justify-center" />
+
+        <Image src={Højrebund} alt="Højrebund" class="flex justify-center" />
+    </div>
+</section>
+
+
+
+
+
+<!-- <section>
+<div>
+<Image src={Jorden} alt="Jorden" class="flex justify-center" />
+</div>
+<Image src={Højretop} alt="Jorden" class="flex justify-center" />
+<Image src={Venstretop} alt="Jorden" class="flex justify-center" />
+<Image src={Højrebund} alt="Jorden" class="flex justify-center" />
+<Image src={venstrebund} alt="Jorden" class="flex justify-center" />
+</section> -->
