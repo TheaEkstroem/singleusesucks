@@ -15,13 +15,13 @@ import skildpade from "../assets/images/skildpade.webp";
       class="mt-2 h-screen w-full bg-cover bg-center grid sm:grid-cols-4 lg:grid-cols-12 grid-flow-col overflow-hidden"
       style="background-image: url('/havet.jpg');"
     >
-      <Image src={grønflaske} alt="" class="col-start-8 col-span-2 parallaxgrafik1" />
+      <Image src={grønflaske} alt="" class="col-6 col-span-2 parallaxgrafik1" />
       <Image src={plastikpose} alt="" class="col-start-4 col-span-2 parallaxgrafik2" />
-      <Image src={fisk2} alt="" class="col-start-8 col-span-1 parallaxgrafik3" />
-      <Image src={fisk1} alt="" class="col-start-2 col-span-2 parallaxgrafik4" />
-      <Image src={grønflaske} alt="" class="col-start-2 col-span-1 parallaxgrafik5" />
-      <Image src={plastikpose} alt="" class="col-start-9 col-span-2 parallaxgrafik6" />
-      <Image src={skildpade} alt="" class="col-start-11 col-span-2 parallaxgrafik7" />
+      <Image src={fisk2} alt="" class="col-6 col-span-1 parallaxgrafik3" />
+      <Image src={fisk1} alt="" class="col-2 col-span-2 parallaxgrafik4" />
+      <Image src={grønflaske} alt="" class="col-start-1 col-span-2 parallaxgrafik5" />
+      <Image src={plastikpose} alt="" class="col-start-3 col-span-2 parallaxgrafik6" />
+      <Image src={skildpade} alt="" class="col-start-1 col-span-1 parallaxgrafik7" />
     </div>
   
     <!-- Overlay Text Content -->
@@ -62,7 +62,7 @@ scroll(animate(".parallaxgrafik4", {  x: [2000, -1700], y: [100, 0] }), {
 	scroll(animate(".parallaxgrafik6", { x: [1600, -1800], y: [150, 0] }), {
 		target: document.querySelector(".parallaxgrafik"), offset: ["start end", "end start"]
 	});
-    scroll(animate(".parallaxgrafik7", { x: [1000, -2000], y: [150, 0] }), {
+    scroll(animate(".parallaxgrafik7", { x: [1800, -800], y: [150, 0] }), {
 		target: document.querySelector(".parallaxgrafik"), offset: ["start end", "end start"]
 	});
 
