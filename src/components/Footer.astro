@@ -1,6 +1,43 @@
 ---
+import { Image } from "astro:assets";
+import Plasticchangelogo from "../assets/images/plasticchangeLogo.webp";
+import Instagram from "../assets/images/instagram.webp";
+import Facebook from "../assets/images/facebook.webp";
+import X from "../assets/images/x.webp";
+import Youtube from "../assets/images/youtube.webp";
+import Linkdin from "../assets/images/linkdin.webp";
+import Link from "../components/Link.astro";
 ---
-<div>
-<p>Footer - tilføj footerindhold</p>
+
+<div class="p-10">
+  <Image src={Plasticchangelogo} alt="Facebook logo" class="" />
+
+  <section class="grid lg:grid-flow-col gap-5 pt-9">
+    <div class="grid gap-2">
+      <div class="flex gap-5">
+        <p>Email.</p>
+        <Link size="text-mg" variant="link" href="/">Info@plasticchange.org</Link>
+      </div>
+      <div class="flex gap-12">
+        <p>Tlf.</p>
+        <Link size="text-mg" variant="link" href="/">+45 42 66 72 46</Link>
+      </div>
+      <p>Telefontid. Mandag - Fredag, 10:00 - 15:00</p>
+    </div>
+    <!--  -->
+    <div class="grid">
+      <p class="font-bold">Støt nu</p>
+      <Link size="text-mg" variant="textlink" href="/">Giv et bidrag</Link>
+      <Link size="text-mg" variant="textlink" href="/">Bliv medlem</Link>
+    </div>
+    <!--  -->
+    <div class="grid grid-flow-col">
+      <Image src={Facebook} alt="Facebook logo" class="" />
+      <Image src={X} alt="X logo" class="" />
+      <Image src={Linkdin} alt="Linkdin logo" class="" />
+      <Image src={Youtube} alt="Youtube logo" class="" />
+      <Image src={Instagram} alt="Instagram logo" class="" />
+    </div>
+  </section>
+  <p class="pt-5">© 2024 Plastic Change</p>
 </div>
-  
