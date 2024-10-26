@@ -9,23 +9,23 @@ import skildpade from "../assets/images/skildpade.webp";
 ---
 <!-- alt med sm: og lg: er responsivt kan evt ændres for at ændre på længden af vores site -->
 
-<section class="parallaxgrafik fullwidthsection relative">
+<section class="parallaxgrafik fullwidthsection relative ">
     <!-- Parallax background and animated images -->
     <div
-      class="mt-2 h-screen w-full bg-cover bg-center grid sm:grid-cols-4 lg:grid-cols-12 grid-flow-col overflow-hidden"
+      class="mt-2 lg:h-screen w-full bg-cover bg-center grid sm:grid-cols-4 lg:grid-cols-12 grid-flow-col overflow-hidden "
       style="background-image: url('/havet.jpg');"
     >
-      <Image src={grønflaske} alt="" class="col-6 col-span-2 parallaxgrafik1" />
+      <Image src={grønflaske} alt="" class="col-1 col-span-2 parallaxgrafik1" />
       <Image src={plastikpose} alt="" class="col-start-4 col-span-2 parallaxgrafik2" />
-      <Image src={fisk2} alt="" class="col-6 col-span-1 parallaxgrafik3" />
+      <Image src={fisk2} alt="" class="col-5 col-span-2 parallaxgrafik3" />
       <Image src={fisk1} alt="" class="col-2 col-span-2 parallaxgrafik4" />
-      <Image src={grønflaske} alt="" class="col-start-1 col-span-2 parallaxgrafik5" />
+      <Image src={grønflaske} alt="" class="col-start-2 col-span-2 parallaxgrafik5" />
       <Image src={plastikpose} alt="" class="col-start-3 col-span-2 parallaxgrafik6" />
-      <Image src={skildpade} alt="" class="col-start-1 col-span-1 parallaxgrafik7" />
+      <Image src={skildpade} alt="" class="col-start-1 col-span-2 parallaxgrafik7" />
     </div>
   
     <!-- Overlay Text Content -->
-    <div class="absolute inset-0 flex flex-col lg:mx-44 lg:mt-44 sm:pt-11 text-left">
+    <div class="absolute inset-0 flex flex-col lg:mx-44 lg:pt-44  pt-60 text-left">
       <h3 class="text-white font-bold mb-4">Hvad er plastikforurening</h3>
       <p class="text-white max-w-lg  ">
         Plastikforurening er ophobning af plastik i naturen, hvor det ikke nedbrydes naturligt. Det findes især i havet,

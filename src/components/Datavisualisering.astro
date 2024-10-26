@@ -9,15 +9,15 @@ import venstrebund from "../assets/images/venstrebund.webp";
 ---
 <!-- alle billeder skal laves om til webp -->
 
-<section class="flex items-center justify-center min-h-screen relative">
+<section class="flex items-center justify-center min-h-screen relative ">
     <!-- Background Image -->
     <div class="absolute  z-0">
-        <Image src={Jorden} alt="Jorden" class="object-cover " />
+        <Image src={Jorden} alt="Jorden" class="object-cover md:max-w-2xl" />
     </div>
 
     <!-- Foreground Images in a Grid -->
    
-    <div id="stagger" class="staggeranimation relative z-10 grid grid-cols-2 gap-14 p-4">
+    <div id="stagger" class="staggeranimation relative z-10 grid grid-cols-2 gap-14 max-w-5xl">
         <Image src={Venstretop} alt="Venstretop" class="flex justify-center" />
         <Image src={Højretop} alt="Højretop" class="flex justify-center" />
         <Image src={venstrebund} alt="Venstrebund" class="flex justify-center" />
