@@ -15,26 +15,28 @@ import skildpade from "../assets/images/skildpade.webp";
       class="mt-2 lg:h-screen w-full bg-cover bg-center grid sm:grid-cols-4 lg:grid-cols-12 grid-flow-col overflow-hidden "
       style="background-image: url('/havet.jpg');"
     >
-      <Image src={grønflaske} alt="" class="col-1 col-span-2 parallaxgrafik1" />
-      <Image src={plastikpose} alt="" class="col-start-4 col-span-2 parallaxgrafik2" />
-      <Image src={fisk2} alt="" class="col-5 col-span-2 parallaxgrafik3" />
-      <Image src={fisk1} alt="" class="col-2 col-span-2 parallaxgrafik4" />
-      <Image src={grønflaske} alt="" class="col-start-2 col-span-2 parallaxgrafik5" />
-      <Image src={plastikpose} alt="" class="col-start-3 col-span-2 parallaxgrafik6" />
-      <Image src={skildpade} alt="" class="col-start-1 col-span-2 parallaxgrafik7" />
+      <Image src={grønflaske} alt="grønflaske" class="col-1 col-span-2 parallaxgrafik1" />
+      <Image src={plastikpose} alt="plastikpose" class="col-start-4 col-span-2 parallaxgrafik2" />
+      <Image src={fisk2} alt="fisk" class="col-5 col-span-2 parallaxgrafik3" />
+      <Image src={fisk1} alt="fisk" class="col-2 col-span-2 parallaxgrafik4" />
+      <Image src={grønflaske} alt="grønflaske" class="col-start-2 col-span-2 parallaxgrafik5" />
+      <Image src={plastikpose} alt="plastikpose" class="col-start-3 col-span-2 parallaxgrafik6" />
+      <Image src={skildpade} alt="skildpade" class="col-start-1 col-span-2 parallaxgrafik7" />
     </div>
   
     <!-- Overlay Text Content -->
     <div class="absolute inset-0 flex flex-col lg:mx-44 lg:pt-44  pt-60 text-left">
       <h3 class="text-white font-bold mb-4">Hvad er plastikforurening</h3>
+      <div class="prose">
       <p class="text-white max-w-lg  ">
         Plastikforurening er ophobning af plastik i naturen, hvor det ikke nedbrydes naturligt. Det findes især i havet,
         hvor det skader dyr, der forveksler det med mad eller vikles ind i det. Over tid nedbrydes plastik til mikroplast,
         små stykker under 5 mm, som spreder farlige kemikalier.
-        Disse kemikalier kan skade både dyr og mennesker, når de kommer ind i fødekæden gennem f.eks. fisk og skaldyr.
-        Plastikforurening påvirker også miljøet ved at blokere vandløb og forringe landskaber, både på land og i vand.
       </p>
-    </div>
+      <p class="text-white max-w-lg  "> Disse kemikalier kan skade både dyr og mennesker, når de kommer ind i fødekæden gennem f.eks. fisk og skaldyr.
+        Plastikforurening påvirker også miljøet ved at blokere vandløb og forringe landskaber, både på land og i vand.</p>
+      </div>
+      </div>
   </section>
 
 <script>
