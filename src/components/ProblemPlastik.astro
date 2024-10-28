@@ -1,0 +1,39 @@
+---
+
+---
+
+<section class="ml-10 h-screen">
+  <div>
+    <h3 class="text-white font-bold mb-4">Problemet med plastikforurening</h3>
+    <div class="prose">
+      <p class="text-white max-w-lg">
+        Plastik i miljøet er et problem, fordi det skader dyreliv, når dyr
+        forveksler det med mad eller vikles ind i det, hvilket kan føre til
+        kvælning eller sult. Mindst 2249 havdyrarter er påvirket af plastik,
+        hvoraf mange allerede er truede.
+      </p>
+      <p class="text-white max-w-lg">
+        Plastik nedbrydes til mikroplast, der kan absorbere miljøgifte, som
+        ender i fødekæden og kan skade mennesker gennem indtag af f.eks. fisk og
+        skaldyr. De kemikalier, der er tilsat plastik eller absorberet fra
+        havet, kan have alvorlige sundhedsmæssige konsekvenser. Desuden skæmmer
+        plastik naturen og kan stoppe vandløb samt kvæle planter og dyreliv.
+      </p>
+    </div>
+  </div>
+</section>
+
+<script>
+  /* Import af Motion One biblioteket */
+  import { animate, stagger, inView, scroll, timeline } from "motion";
+
+  /* Parallax med tekstboks */
+  scroll(animate(".parallaxelement", { y: [50, 500] }), {
+    target: document.querySelector(".parallaxelement"),
+  });
+
+  /* Parallax med tekstboks og sticky*/
+  scroll(animate(".stickyparallax1", { y: [-300, 0] }), {
+    target: document.querySelector(".stickyparallax1"),
+  });
+</script>
